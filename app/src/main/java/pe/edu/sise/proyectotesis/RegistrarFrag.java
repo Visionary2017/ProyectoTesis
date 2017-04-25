@@ -4,9 +4,11 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -51,6 +53,8 @@ public class RegistrarFrag extends Fragment {
         return fragment;
     }
 
+    Button btnContinuar;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,13 +62,30 @@ public class RegistrarFrag extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registrar, container, false);
+
+        View v =inflater.inflate(R.layout.fragment_registrar, container, false);
+
+        Button btnContinuar = (Button)v.findViewById(R.id.btnContinuar);
+
+        btnContinuar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RegistrarUsuario fragment = new RegistrarUsuario();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
+        });
+
+        return v;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

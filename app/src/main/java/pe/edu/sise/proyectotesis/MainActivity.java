@@ -1,5 +1,6 @@
 package pe.edu.sise.proyectotesis;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -28,14 +29,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        /*Intent  intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if(bundle.get("valor") == 1) {
+
+        }*/
+
     }
 
     @Override
@@ -72,7 +80,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_categoria) {
+            return true;
+        }else if(id == R.id.action_login){
+            return true;
+        }else if(id == R.id.action_close){
             return true;
         }
 
@@ -87,14 +99,16 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         boolean fragTrans = false;
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_categoria) {
                 fragment = new LoginFrag();
                 fragTrans = true;
-        } else if (id == R.id.nav_gallery) {
-
-        } /*else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_login) {
+                fragment = new LoginFrag();
+                fragTrans = true;
+        } else if (id == R.id.nav_close) {
+                Intent intent = new Intent(getApplicationContext(),InicioActivity.class);
+                startActivity(intent);
+        } /*else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
 
