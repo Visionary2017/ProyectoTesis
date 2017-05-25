@@ -1,0 +1,221 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:id="@+id/fragment_perfil"
+    android:background="@color/colorIcons"
+    tools:context="pe.edu.sise.proyectotesis.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_logo_ranset" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="PERFIL USUARIO"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/vwApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_v2"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:ems="10"
+                        android:hint="Apellidos"
+                        android:text="Example : Mamani Puclla"
+                        android:inputType="text"
+                        android:typeface="monospace"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/vwNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_v2"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:ems="10"
+                        android:hint="Nombres"
+                        android:text="Example : Angel Jhonatan Nombres"
+                        android:inputType="text"
+                        android:typeface="monospace" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/vwDni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_v2"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:ems="10"
+                        android:hint="Dni"
+                        android:text="Example : 48676537"
+                        android:inputType="text"
+                        android:typeface="monospace" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/vwDireccion1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_v2"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:ems="10"
+                        android:hint="Direccion 1"
+                        android:text="Example : Av. Arequipa 2431"
+                        android:inputType="text"
+                        android:typeface="monospace" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/vwDireccion2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_v2"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:ems="10"
+                        android:hint="Direccion 2"
+                        android:text="Example : Av. Arequipa 2536"
+                        android:inputType="text"
+                        android:typeface="monospace" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sexo :"
+                        android:paddingRight="5dp"
+                        android:textSize="16dp"
+                        android:paddingTop="5dp"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rbtsexo"
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Masculino"
+                            android:textSize="16dp"
+                            android:id="@+id/rbtm"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Femenino"
+                            android:textSize="16dp"
+                            android:id="@+id/rbtf"
+                            />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/txtemailr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_email_v2"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:text="Example : amamani.9508@gmail.com"
+                        android:inputType="text"
+                        android:typeface="monospace" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_box"
+                    android:drawableTop="@drawable/ic_save"
+                    android:text="Guardar"
+                    android:textColor="@color/colorIcons"
+                    android:textAppearance="?android:attr/textAppearanceButton" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

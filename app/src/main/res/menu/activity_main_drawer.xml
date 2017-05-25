@@ -2,14 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Iniciar Sesion" />
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_user"
+            android:title="Perfil Usuario" />
+
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Categorias" />
+            android:id="@+id/nav_categoria"
+            android:icon="@drawable/ic_catalogo"
+            android:title="Catalogo" />
+
+        <item
+            android:id="@+id/nav_pedidos_pendientes"
+            android:icon="@drawable/ic_list_pendientes"
+            android:title="Pedidos" />
+
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_shopping"
+            android:title="Carrito" />
+
+        <!--<item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_user"
+            android:title="Usuario" />-->
+
+        <item
+            android:id="@+id/nav_close"
+            android:icon="@drawable/ic_close"
+            android:title="Cerrar Sesión" />
+
         <!--<item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
