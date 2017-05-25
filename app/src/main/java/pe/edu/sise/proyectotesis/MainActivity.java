@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-<<<<<<< HEAD
         session = new SessionManagement(getApplicationContext());
 
         session.checkLogin();
@@ -54,8 +53,6 @@ public class MainActivity extends AppCompatActivity
         // name
         String name = user.get(SessionManagement.KEY_NAME);
 
-=======
->>>>>>> origin/master
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +71,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-<<<<<<< HEAD
         if(name != ""){
             Intent intent = getIntent();
             Bundle dato = intent.getExtras();
@@ -85,13 +81,11 @@ public class MainActivity extends AppCompatActivity
                 ObtDatosEmpleado(valor);
             }
         }
-=======
         /*Intent  intent = getIntent();
         Bundle bundle = intent.getExtras();
         if(bundle.get("valor") == 1) {
 
         }*/
->>>>>>> origin/master
 
     }
 
@@ -181,7 +175,7 @@ public class MainActivity extends AppCompatActivity
         boolean fragTrans = false;
 
         //noinspection SimplifiableIfStatement
-<<<<<<< HEAD
+
         /*if (id == R.id.action_categoria) {
 =======
         if (id == R.id.action_categoria) {
@@ -240,7 +234,7 @@ public class MainActivity extends AppCompatActivity
         boolean fragTrans = false;
 
         if (id == R.id.nav_categoria) {
-<<<<<<< HEAD
+
                 fragment = new CatalogoFragment();
                 fragTrans = true;
         } /*else if (id == R.id.nav_login) {
