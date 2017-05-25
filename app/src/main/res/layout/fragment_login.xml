@@ -54,7 +54,11 @@
                                     android:layout_height="wrap_content">
 
                                         <EditText
+<<<<<<< HEAD
                                             android:id="@+id/txtUsuario"
+=======
+                                            android:id="@+id/txtusu"
+>>>>>>> origin/master
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:drawableLeft="@drawable/ic_user"
@@ -70,7 +74,11 @@
                                     android:layout_height="wrap_content">
 
                                         <EditText
+<<<<<<< HEAD
                                             android:id="@+id/txtContrasena"
+=======
+                                            android:id="@+id/txtpass"
+>>>>>>> origin/master
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_below="@+id/txtusu"
@@ -97,7 +105,11 @@
                                     />
 
                                 <Button
+<<<<<<< HEAD
                                     android:id="@+id/btnIngresar"
+=======
+                                    android:id="@+id/btnLogin"
+>>>>>>> origin/master
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:background="@drawable/gradient_box"

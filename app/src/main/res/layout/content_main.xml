@@ -10,7 +10,10 @@
     tools:showIn="@layout/app_bar_main"
     android:background="@color/colorIcons"
     >
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
 
 

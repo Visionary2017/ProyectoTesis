@@ -3,16 +3,20 @@
 
     <group android:checkableBehavior="single">
 
+<<<<<<< HEAD
         <item
             android:id="@+id/nav_perfil"
             android:icon="@drawable/ic_user"
             android:title="Perfil Usuario" />
 
+=======
+>>>>>>> origin/master
         <item
             android:id="@+id/nav_categoria"
             android:icon="@drawable/ic_catalogo"
             android:title="Catalogo" />
 
+<<<<<<< HEAD
         <item
             android:id="@+id/nav_pedidos_pendientes"
             android:icon="@drawable/ic_list_pendientes"
@@ -27,6 +31,12 @@
             android:id="@+id/nav_login"
             android:icon="@drawable/ic_user"
             android:title="Usuario" />-->
+=======
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_user"
+            android:title="Usuario" />
+>>>>>>> origin/master
 
         <item
             android:id="@+id/nav_close"

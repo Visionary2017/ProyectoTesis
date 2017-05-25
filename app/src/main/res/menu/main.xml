@@ -14,8 +14,24 @@
         app:showAsAction="never" />
 
     <item
+<<<<<<< HEAD
         android:id="@+id/action_close"
         android:orderInCategory="100"
+=======
+        android:id="@+id/action_categoria"
+        android:orderInCategory="100"
+        android:title="Categoria"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="Inicia Sesión"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_close"
+        android:orderInCategory="100"
+>>>>>>> origin/master
         android:title="Cerrar Sesión"
         app:showAsAction="never" />
 </menu>
